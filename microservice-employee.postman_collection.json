@@ -1,0 +1,254 @@
+{
+	"info": {
+		"_postman_id": "1617d8f5-ec64-4721-b9e1-af3d9a59731c",
+		"name": "microservice-employee",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "17296608"
+	},
+	"item": [
+		{
+			"name": "employee",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Firman\",\r\n    \"email\" : \"Firman34@gmail.com\",\r\n    \"age\" : \"24\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:6000/employee-service/employee",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"employee-service",
+								"employee"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Virly Shein\",\r\n    \"email\" : \"virly78@gmail.com\",\r\n    \"age\" : \"24\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:6000/employee-service/employee/2",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"employee-service",
+								"employee",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:6000/employee-service/employees/all",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"employee-service",
+								"employees",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:6000/employee-service/employee/152",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"employee-service",
+								"employee",
+								"152"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:6000/employee-service/employee/102",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"employee-service",
+								"employee",
+								"102"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "payment",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bank\" : \"SeaBank\",\r\n    \"city\" : \"Francis\",\r\n    \"state\" : \"Francs 67 st\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:6001/payment-service/payment",
+							"host": [
+								"localhost"
+							],
+							"port": "6001",
+							"path": [
+								"payment-service",
+								"payment"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"bank\" : \"BankSwiss\",\r\n    \"city\" : \"Switzerlang\",\r\n    \"state\" : \"Veyenord 12 st\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:6001/payment-service/payment/103",
+							"host": [
+								"localhost"
+							],
+							"port": "6001",
+							"path": [
+								"payment-service",
+								"payment",
+								"103"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:6001/payment-service/payments/all",
+							"host": [
+								"localhost"
+							],
+							"port": "6001",
+							"path": [
+								"payment-service",
+								"payments",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:6001/payment-service/payment/103",
+							"host": [
+								"localhost"
+							],
+							"port": "6001",
+							"path": [
+								"payment-service",
+								"payment",
+								"103"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:6001/payment-service/payment/106",
+							"host": [
+								"localhost"
+							],
+							"port": "6001",
+							"path": [
+								"payment-service",
+								"payment",
+								"106"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
